@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import Home from '../../screens'
 
 import { 
  
  } from '../../actions/homepage';
 
- 
+const style = {
+    width: '100%'
+} 
 
 class HomeContainer extends Component {
     constructor (props) {
@@ -19,8 +22,8 @@ class HomeContainer extends Component {
     
     render () {
         return (
-            <div className="">
-                
+            <div className="" style={style}>
+                <Home />
             </div>
         )
     }
